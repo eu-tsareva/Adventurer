@@ -1,0 +1,35 @@
+nav {
+  // margin: 8px 0;
+  // box-shadow: none;
+
+   .brand-logo {
+      font-family: 'PT Sans', sans-serif;
+      font-size: 1.88888888888889em;
+      text-transform: uppercase;
+      color:  @highlight;
+    }
+
+    ul li {
+        a {
+          font: inherit;
+          font-size: 0.77777777777778em;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: @text-color;
+        }
+
+        i {
+          color: @text-color;
+        }
+
+      &.active,
+      &:hover  {
+        background-color: transparent;
+
+          a, i {
+            background-color: transparent;
+            color: @highlight;
+          }
+      }
+    }
+}
