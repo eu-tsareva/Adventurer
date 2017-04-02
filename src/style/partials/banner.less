@@ -1,0 +1,59 @@
+.banner-wrapper {
+  position: relative;
+  height: 780px;
+  margin-bottom: 50px;
+  padding-top: 245px;
+
+  background: #cccccc url('../img/slider-bg.jpg') no-repeat;
+}
+
+.carousel {
+  .carousel-item {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+
+      h2.carousel-title {
+        font-size: 5.64285714285714em;
+        font-weight: 800;
+        line-height: 1;
+      }
+      h2.carousel-title-main {
+        font-size: 6.42857142857143em;
+      }
+      p {
+          font-weight: 600;
+
+          &.carousel-text {
+            font-size: 1.71428571428571em;
+          }
+      }
+  }
+}
+
+.carousel-indicator {
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+
+  font-size: 0;
+
+  border-radius: 50%;
+  background: #000000 url('../img/arrow-left.svg') no-repeat center center;
+  z-index: 100;
+
+  &:hover {
+    background: #e1e2e3 url('../img/arrow-left-hover.svg') no-repeat center center;
+    cursor: pointer;
+  }
+}
+
+#banner-prev {
+  left: 0;
+}
+
+#banner-next {
+  right: 0;
+  transform: rotate(180deg);
+}

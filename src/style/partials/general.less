@@ -7,3 +7,17 @@ body {
   line-height: 1.66666666666667;
   color: @text-color;
 }
+
+
+a {
+  font: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @text-color;
+
+  &:hover,
+  &.active {
+    color: @highlight;
+  }
+}

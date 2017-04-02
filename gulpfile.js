@@ -65,7 +65,6 @@ gulp.task('style-build', function () {
     .pipe(sourcemaps.init())
     .pipe(less())
     .pipe(purify([path.src.html]))
-    // .pipe(uncss({html: path.src.html}))
     .pipe(prefixer())
     .pipe(cssmin())
     .pipe(sourcemaps.write())
