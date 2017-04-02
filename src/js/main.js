@@ -1,4 +1,6 @@
 //= ../../bower_components/jquery/dist/jquery.js
+//= ./partials/svg.js
+
 //= ./partials/jquery.easing.1.3.js
 //= ./partials/hammer.min.js
 //= ./partials/jquery.hammer.js
@@ -12,15 +14,15 @@
 
     $('.button-collapse').sideNav();
 
-    var $carousel = $('#banner');
+    var $carousel = $('.banner');
     $carousel.carousel({
       fullWidth: true
     });
-    $('#banner-prev').click(function(e) {
+    $('.banner-control-prev').click(function(e) {
       e.preventDefault();
       $carousel.carousel('prev');
     });
-    $('#banner-next').click(function(e) {
+    $('.banner-control-next').click(function(e) {
       e.preventDefault();
       $carousel.carousel('next');
     });

@@ -7,53 +7,59 @@
   background: #cccccc url('../img/slider-bg.jpg') no-repeat;
 }
 
-.carousel {
+.banner.carousel-slider {
   .carousel-item {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     color: #ffffff;
 
-      h2.carousel-title {
-        font-size: 5.64285714285714em;
+      h2 {
+        font-size: 4.38888888888889em;
         font-weight: 800;
         line-height: 1;
       }
-      h2.carousel-title-main {
-        font-size: 6.42857142857143em;
+      h2.banner-title {
+        font-size: 5em;
       }
       p {
-          font-weight: 600;
-
-          &.carousel-text {
-            font-size: 1.71428571428571em;
-          }
+        font-weight: 600;
+        font-size: 1.33333333333333em;
       }
   }
 }
 
-.carousel-indicator {
+.banner-control {
   position: absolute;
-  top: 50%;
+  top: 55%;
   width: 60px;
   height: 60px;
 
   font-size: 0;
+  line-height: 60px;
 
   border-radius: 50%;
-  background: #000000 url('../img/arrow-left.svg') no-repeat center center;
+  background-color: @banner-control-bg;
+  cursor: pointer;
   z-index: 100;
 
+    .svg {
+      vertical-align: middle;
+    }
+
   &:hover {
-    background: #e1e2e3 url('../img/arrow-left-hover.svg') no-repeat center center;
-    cursor: pointer;
+    background-color: @banner-control-hover-bg;
+
+      .svg-path {
+        fill: @banner-control-hover-arrow;
+      }
   }
 }
 
-#banner-prev {
-  left: 0;
+.banner-control-prev {
+  left: 2%;
 }
 
-#banner-next {
-  right: 0;
+.banner-control-next {
+  right: 2%;
   transform: rotate(180deg);
 }
