@@ -11,6 +11,7 @@
 //= ./partials/collapsible.js
 //= ./partials/velocity.min.js
 //= ./partials/slider.js
+//= ./partials/parallax.js
 
 (function($){
   $(function(){
@@ -33,6 +34,8 @@
     $('.collapsible').collapsible('open', 0);
 
     $('.slider').slider();
+
+    $('.parallax').parallax();
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
