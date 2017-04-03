@@ -1,0 +1,38 @@
+@border-width: 1px;
+
+.progress-list {
+  margin: 0;
+  list-style: none;
+
+    li {
+      height: 30px;
+      margin-bottom: 30px;
+
+      background-color: @progress-bg;
+      border: @border-width solid @progress-border;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+}
+
+.progress-bar {
+  display: inline-block;
+  padding-left: 18px;
+
+  font-size: 0.88888888888889em;
+  line-height: 30px - 2*@border-width;
+  color: #ffffff;
+
+  background-color: @progress-color;
+  vertical-align: top;
+
+}
+
+.progress-bar-50 { width: 50%; }
+.progress-bar-60 { width: 60%; }
+.progress-bar-75 { width: 75%; }
+.progress-bar-80 { width: 80%; }
+.progress-bar-85 { width: 85%; }
+.progress-bar-90 { width: 90%; }

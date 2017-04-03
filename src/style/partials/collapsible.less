@@ -1,0 +1,54 @@
+
+.collapsible {
+  margin: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.collapsible-header {
+  position: relative;
+  padding: 7px 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.88888888888889em;
+  line-height: 2.75;
+
+  color: #ffffff;
+  background-color: @collapsible-header;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 58px;
+    height: 58px;
+
+    background: transparent url("../img/plus.png") no-repeat center right;
+    border-left: 1px solid #bebebe;
+    content: "";
+  }
+}
+
+.collapsible-header.active {
+  background-color: @collapsible-active-header;
+
+  &::after {
+    background: transparent url("../img/minus.png") no-repeat center right;
+  }
+}
+
+.collapsible-body {
+  background-color: #f8f8f8;
+  border: 1px solid @collapsible-border;
+
+    p {
+      margin-top: 0;
+      font-size: 0.77777777777778em;
+      line-height: 1.42857142857143;
+      color: @text-dark;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+}

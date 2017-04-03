@@ -8,6 +8,7 @@
 //= ./partials/global.js
 //= ./partials/carousel.js
 //= ./partials/sideNav.js
+//= ./partials/collapsible.js
 
 (function($){
   $(function(){
@@ -27,7 +28,7 @@
       $carousel.carousel('next');
     });
 
-    // $('.collapsible').collapsible('open', 0);
+    $('.collapsible').collapsible('open', 0);
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
