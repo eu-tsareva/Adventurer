@@ -2,9 +2,6 @@
   position: relative;
   padding: 30px 25px;
   padding-top: 160px;
-  // padding-bottom: 42px;
-  // padding-left: 25px;
-  // padding-right: 45px;
 
   background-color: @service-bg;
   border: 1px solid @service-border;
@@ -31,14 +28,13 @@
 
   &:hover {
     background-color: @service-active-bg;
-    color: @white-base;
-
+    color: @inverse-color;
       h4 {
         color:inherit;
       }
 
-      .service-icon .svg-path {
-        fill: #ffffff;
+      .service-icon .grey {
+        fill: @inverse-color;
       }
   }
 }

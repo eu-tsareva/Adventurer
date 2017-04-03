@@ -10,13 +10,13 @@
   .carousel-item {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    color: #ffffff;
+    color: @inverse-color;
 
       h2 {
         font-size: 4.38888888888889em;
         font-weight: 800;
         line-height: 1;
-        color: #ffffff;
+        color: inherit;
       }
       h2.banner-title {
         font-size: 5em;
@@ -44,12 +44,13 @@
 
     .svg {
       vertical-align: middle;
+
     }
 
   &:hover {
     background-color: @banner-control-hover-bg;
 
-      .svg-path {
+      .opaque {
         fill: @banner-control-hover-arrow;
       }
   }
