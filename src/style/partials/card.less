@@ -38,7 +38,6 @@
     display: block;
     width: 122px;
     height: 122px;
-    border-radius: 50%;
   }
 
   .review-image-1 {
@@ -46,5 +45,18 @@
   }
   .review-image-2 {
     background-image: url("../img/review2.jpg");
+  }
+}
+
+.card-team {
+  .card-reveal {
+    height: 45%;
+    color: @inverse-color;
+    background-color: @team-reveal;
+  }
+
+  &:hover .card-reveal {
+    display: block;
+    transform: translateY(-100%);
   }
 }
