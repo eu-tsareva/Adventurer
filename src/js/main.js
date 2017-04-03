@@ -9,6 +9,8 @@
 //= ./partials/carousel.js
 //= ./partials/sideNav.js
 //= ./partials/collapsible.js
+//= ./partials/velocity.min.js
+//= ./partials/slider.js
 
 (function($){
   $(function(){
@@ -29,6 +31,8 @@
     });
 
     $('.collapsible').collapsible('open', 0);
+
+    $('.slider').slider();
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
