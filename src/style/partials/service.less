@@ -1,0 +1,49 @@
+.service-item {
+  position: relative;
+  padding: 30px 25px;
+  padding-top: 160px;
+  // padding-bottom: 42px;
+  // padding-left: 25px;
+  // padding-right: 45px;
+
+  background-color: @service-bg;
+  border: 1px solid @service-border;
+  border-radius: 10px;
+
+    h4 {
+      font-size: 1.22222222222222em;
+    }
+
+    p {
+      line-height: 1.38888888888889;
+
+      &:last-child {
+        margin-bottom: 40px;
+      }
+    }
+
+    .service-icon {
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+  &:hover {
+    background-color: @service-active-bg;
+    color: @white-base;
+
+      h4 {
+        color:inherit;
+      }
+
+      .service-icon .svg-path {
+        fill: #ffffff;
+      }
+  }
+}
+
+.service-btn {
+  display: block;
+   margin: 0 auto;
+}
