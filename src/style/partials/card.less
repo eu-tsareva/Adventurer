@@ -78,7 +78,7 @@
   }
 }
 
-.card-team:after {
+.card-team::after {
   position: absolute;
   top:0;
   left: 0;
@@ -93,11 +93,82 @@
 }
 
 .card-team:hover {
-  &:after {
+  &::after {
     display: none;
   }
   .card-reveal {
     display: block;
     transform: translateY(-100%);
   }
+}
+
+.card-work {
+  .card-content {
+    padding: 20px;
+
+    .card-title {
+      font-size: 1.11111111111111em;
+      line-height: 1.6;
+    }
+
+    p {
+      font-size: 0.66666666666667em;
+      line-height: 2.66666666666667;
+    }
+  }
+
+  .card-controls {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 100;
+  }
+
+  .card-control {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+    border: 2px solid @white-base;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .card-control-zoom {
+    background: transparent url("../img/zoom.svg") no-repeat center center;
+  }
+
+  .card-control-link {
+    background: transparent url("../img/link.svg") no-repeat center center;
+  }
+
+  .card-image {
+    position: relative;
+
+    &:hover {
+      .card-controls {
+        display: block;
+      }
+      &::after {
+        display: block;
+      }
+    }
+  }
+}
+
+.card-work .card-image::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background-color: @work-hover;
+  z-index: 50;
+  content: "";
 }

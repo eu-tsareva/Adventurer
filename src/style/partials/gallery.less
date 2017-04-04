@@ -1,0 +1,43 @@
+.gallery {
+  .gallery-filter {
+    margin-bottom: 50px;
+  }
+
+  .gallery-controls {
+    margin: 20px 0;
+  }
+
+  .gallery-control {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+    background-color: @gallery-control;
+    vertical-align: bottom;
+
+      .svg {
+        position: absolute;
+        top: 4px;
+        left: 6px;
+        width: 7px;
+        height: 12px;
+      }
+  }
+
+  .gallery-control:hover:not(.disabled) {
+    box-shadow: 0 0 1px 1px @gallery-control;
+  }
+
+  .gallery-control.disabled {
+    background-color: @gallery-control-disabled;
+    box-shadow: none;
+    cursor: default;
+  }
+
+  .gallery-control-next {
+    transform: rotate(180deg);
+    transform-origin: center;
+  }
+}
