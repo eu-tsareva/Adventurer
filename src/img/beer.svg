@@ -27,13 +27,5 @@
 
 
 <?xpacket end="w"?></metadata>
-<defs>
-    <style>
-      .white {
-        fill: #fff;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="fa-beer" class="white" d="M1220,3996a3.843,3.843,0,0,1-2.82-1.17A3.891,3.891,0,0,1,1216,3992v-8h8.01v12H1220Zm32.01,8v-25l2-1-1-6h-30l-1.01,4h-15l-1,4,2,2v10a12.018,12.018,0,0,0,12,12h4.01l-4.01,6v6h36.01v-6Z" transform="translate(-1206 -3972)"/>
+  <path id="fa-beer" fill="#ffffff" d="M1220,3996a3.843,3.843,0,0,1-2.82-1.17A3.891,3.891,0,0,1,1216,3992v-8h8.01v12H1220Zm32.01,8v-25l2-1-1-6h-30l-1.01,4h-15l-1,4,2,2v10a12.018,12.018,0,0,0,12,12h4.01l-4.01,6v6h36.01v-6Z" transform="translate(-1206 -3972)"/>
 </svg>
