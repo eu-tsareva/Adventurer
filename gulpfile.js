@@ -18,7 +18,8 @@ var gulp = require('gulp'),
     pngquant = require('imagemin-pngquant'),
     del = require('del'),
     browserSync = require("browser-sync"),
-    reload = browserSync.reload;
+    reload = browserSync.reload,
+    runSequence = require('run-sequence');
 
 var path = {
   build: {
@@ -73,7 +74,7 @@ gulp.task('jsx-build', function() {
         .pipe(gulp.dest(path.src.jspartials));
 });
 
-gulp.task('js-build', ['jsx-build'],function () {
+gulp.task('js-build', function () {
   gulp.src(path.src.js)
       .pipe(rigger())
       .pipe(sourcemaps.init())
@@ -82,14 +83,13 @@ gulp.task('js-build', ['jsx-build'],function () {
       .pipe(sourcemaps.write())
       .pipe(gulp.dest(path.build.js))
       .pipe(reload({stream: true}));
-});
+});;
 
-gulp.task('style-build', ['js-build'], function () {
+gulp.task('style-build', function () {
   gulp.src(path.src.style)
       .pipe(sourcemaps.init())
       .pipe(less())
-      // .pipe(purify([path.src.html, path.src.js, path.src.jspartials+'*.js']))
-      .pipe(purify([path.build.html+"*.html", path.build.js+'*.js']))
+      .pipe(purify([path.src.html, path.src.jspartials+'*.js']))
       .pipe(prefixer())
       .pipe(cssmin())
       .pipe(sourcemaps.write())
@@ -116,11 +116,13 @@ gulp.task('fonts-build', function() {
 
 
 
-gulp.task('build', ['html-build', 'jsx-build', 'js-build', 'style-build', 'fonts-build', 'image-build']);
+gulp.task('build', function(cb) {
+  runSequence('html-build', 'jsx-build', 'js-build', ['fonts-build', 'image-build'],'style-build', cb);
+});
 
-gulp.task('watch', function(){
+gulp.task('watch', ['build'], function(){
   gulp.watch(path.watch.html, ['html-build']);
-  gulp.watch(path.watch.jsx, ['style-build']);
+  gulp.watch(path.watch.jsx, ['jsx-build']);
   gulp.watch(path.watch.js, ['js-build']);
   gulp.watch(path.watch.style, ['style-build']);
   gulp.watch(path.watch.img, ['image-build']);
@@ -135,4 +137,4 @@ gulp.task('clean', function() {
   del(path.clean);
 });
 
-gulp.task('default', ['build', 'webserver', /*'watch'*/]);
+gulp.task('default', ['build', 'webserver', 'watch']);
