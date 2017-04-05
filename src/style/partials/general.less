@@ -42,12 +42,24 @@ ul.inline-list {
 
     li {
       display: inline-block;
-      margin: 0 5px;
+      margin: 0;
+      margin-right: 10px;
       vertical-align: bottom;
+      &:last-child {
+        margin-right: 0;
+      }
     }
+
 }
 
 .text-hide {
   font-size: 0;
   background-color: transparent;
+}
+
+.logo {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.88888888888889em;
+  text-transform: uppercase;
+  color:  @highlight;
 }
