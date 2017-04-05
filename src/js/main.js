@@ -2,16 +2,20 @@
 //= ./partials/svg.js
 
 //= ./partials/jquery.easing.1.3.js
+//= ./partials/bundle.js
 //= ./partials/hammer.min.js
 //= ./partials/jquery.hammer.js
 //= ./partials/initial.js
 //= ./partials/global.js
+
 //= ./partials/carousel.js
 //= ./partials/sideNav.js
 //= ./partials/collapsible.js
 //= ./partials/velocity.min.js
 //= ./partials/slider.js
 //= ./partials/parallax.js
+
+
 
 (function($){
   $(function(){
