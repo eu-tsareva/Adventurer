@@ -1,0 +1,17 @@
+.table-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+    .table-flex-item {
+      margin: 2px;
+    }
+}
+
+.table-flex-stretch {
+  .table-flex();
+  justify-content: space-between;
+
+  .table-flex-item {
+    flex-grow: 1;
+  }
+}
