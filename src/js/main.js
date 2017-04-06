@@ -41,15 +41,13 @@
 
     $('.parallax').parallax();
 
-    var $searchShow = $('.search-show'),
-        $searchForm = $('.search-form');
-    $searchShow.mouseenter(function(e) {
-      $searchForm.removeClass('hidden-form');
+    $('.show-form').mouseenter(function(e) {
+      $(this).siblings('.floating-form').removeClass('hidden-form');
       $(this).addClass('hide');
     });
-    $searchForm.mouseleave(function() {
-      $searchForm.addClass('hidden-form');
-      $searchShow.removeClass('hide');
+    $('.floating-form').mouseleave(function() {
+      $(this).addClass('hidden-form');
+      $(this).siblings('.show-form').removeClass('hide');
     });
 
   }); // end of document ready

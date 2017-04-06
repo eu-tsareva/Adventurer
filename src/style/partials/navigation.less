@@ -1,16 +1,20 @@
 nav {
+  color: @link-color;
+    a {
+      color: inherit;
+    }
     ul li {
         a {
           font-size: 0.77777777777778em;
           font-weight: bold;
-          color: @link-color;
+          color: inherit;
         }
 
       &.active,
       &:hover  {
         background-color: transparent;
-
           a {
+            color: @highlight;
             background-color: transparent;
           }
       }

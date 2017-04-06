@@ -13,9 +13,10 @@
 </head>
 <body>
   <!-- page navigation -->
-  <nav class="transparent" role="navigation">
+  <div id="page-navigation"></div>
+  <!-- <nav class="transparent" role="navigation">
     <div class="nav-wrapper container">
-      <a href="#" class="logo">Adventurer</a>
+      <a class="logo" id="top">Adventurer</a>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li class="active"><a href="#">Home</a></li>
@@ -24,11 +25,9 @@
         <li><a href="#">Contact</a></li>
         <li><a href="#">Faq</a></li>
         <li><a href="#">Support</a></li>
-        <li class="search-show">
-          <a href="#"><i class="material-icons">search</i></a>
-        </li>
         <li>
-          <form class="inline-form hidden-form search-form" action="" method="get">
+          <span class="show-form"><i class="material-icons">search</i></span>
+          <form class="inline-form search-form floating-form hidden-form" action="" method="get">
             <div class="input-field">
               <input type="search">
             </div>
@@ -43,11 +42,18 @@
         <li><a href="#service">Service</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Faq</a></li>
-        <li><a href="#">Support</a></li><li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Support</a></li>
+        <li>
+          <form class="inline-form search-form" action="" method="get">
+            <div class="input-field">
+              <input type="search">
+            </div>
+            <button class="btn search-btn"><i class="material-icons">search</i></button>
+          </form>
+        </li>
       </ul>
-
     </div>
-  </nav>
+  </nav> -->
 
   <div class="banner-wrapper">
     <a class="banner-control banner-control-prev center left text-hide circle"><img class="svg" src="./img/arrow-left.svg">previous</a>
@@ -613,7 +619,7 @@
         <div class="row">
           <div class="col m3">
             <div class=" footer-section">
-              <a class="footer-title logo">Adventurer</a>
+              <a class="footer-title logo" href="#top">Adventurer</a>
               <p>
                 It is a long established fact that a reader will be distracted by the readable content of
                 a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.

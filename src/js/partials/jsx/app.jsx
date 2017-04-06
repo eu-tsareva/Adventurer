@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Item from './item.jsx';
+import Nav from './nav.jsx';
 
-ReactDOM.render(<Item />, document.getElementById('test'));
+ReactDOM.render(<Nav />, document.getElementById('page-navigation'));
