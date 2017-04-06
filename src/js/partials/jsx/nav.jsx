@@ -1,6 +1,5 @@
 import React from 'react';
 import SearchForm from './searchForm.jsx';
-// import InlineForm from './inlineForm.jsx';
 
 class Nav extends React.Component {
   constructor() {
