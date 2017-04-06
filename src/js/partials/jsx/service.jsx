@@ -11,7 +11,7 @@ class Service extends React.Component {
           <a className="btn service-btn">see more</a>
         </div>
       </div>
-    )
+    );
   }
 }
 
