@@ -12,6 +12,7 @@
   <link href="./css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+  <!-- page navigation -->
   <nav class="transparent" role="navigation">
     <div class="nav-wrapper container">
       <a href="#" class="logo">Adventurer</a>
@@ -23,7 +24,17 @@
         <li><a href="#">Contact</a></li>
         <li><a href="#">Faq</a></li>
         <li><a href="#">Support</a></li>
-        <li><a href="#"><i class="material-icons">search</i></a></li>
+        <li class="search-show">
+          <a href="#"><i class="material-icons">search</i></a>
+        </li>
+        <li>
+          <form class="inline-form hidden-form search-form" action="" method="get">
+            <div class="input-field">
+              <input type="search">
+            </div>
+            <button class="btn search-btn"><i class="material-icons">search</i></button>
+          </form>
+        </li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -584,7 +595,7 @@
             <p class="valign">Subscribe to our newsletter to get every Notify</p>
           </div>
           <div class="col m4 offset-m3">
-            <form class="subscribe-form" action="" method="post">
+            <form class="inline-form subscribe-form" action="" method="post">
               <div class="input-field">
                 <input name="email" type="email" placeholder="Your email">
               </div>

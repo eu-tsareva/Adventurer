@@ -41,5 +41,16 @@
 
     $('.parallax').parallax();
 
+    var $searchShow = $('.search-show'),
+        $searchForm = $('.search-form');
+    $searchShow.mouseenter(function(e) {
+      $searchForm.removeClass('hidden-form');
+      $(this).addClass('hide');
+    });
+    $searchForm.mouseleave(function() {
+      $searchForm.addClass('hidden-form');
+      $searchShow.removeClass('hide');
+    });
+
   }); // end of document ready
 })(jQuery); // end of jQuery name space

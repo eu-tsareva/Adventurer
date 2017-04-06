@@ -1,46 +1,108 @@
-.subscribe-form {
+.inline-form {
+  @height: 40px;
   @btn-width: 40px;
-  @btn-height: 40px;
+
   position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
   padding-right: @btn-width;
 
     .input-field {
         margin: 0;
 
         input {
-          height: auto;
+          height: @height;
           margin: 0;
+          width: 100%;
           padding: 10px;
 
-          font-size: inherit;
+          font-size: 0.9em;
           line-height: inherit;
+          color: @text-color;
 
           box-sizing: border-box;
           background-color: @white-base;
-          border: none;
+          @border: 1px solid @gray-lighter;
+          border: @border;
 
           &:focus {
             box-shadow: none;
-            border: none;
+            border: @border;
           }
         }
     }
 
-    .subscribe-btn {
+    .btn {
       position: absolute;
       top: 0;
       right: 0;
+      z-index: 50;
 
       width: @btn-width;
-      height: @btn-height;
-      padding-left: 15px;
-      padding-right: 5px;
+      height: @height;
+      padding-left: 12px;
+      padding-right: 8px;
       box-sizing: border-box;
-      z-index: 50;
+      box-shadow: none;
+      border-radius: none;
 
         i {
            margin: 0;
-          line-height: @btn-height;
+          line-height: @height;
         }
     }
+}
+
+.hidden-form {
+  display: none;
+  width: 0;
+  transition: width 0.5s;
+}
+
+.subscribe-form {
+  // @btn-width: 40px;
+  // @btn-height: 40px;
+  // position: relative;
+  // padding-right: @btn-width;
+  //
+  //   .input-field {
+  //       margin: 0;
+  //
+  //       input {
+  //         height: auto;
+  //         margin: 0;
+  //         padding: 10px;
+  //
+  //         font-size: inherit;
+  //         line-height: inherit;
+  //
+  //         box-sizing: border-box;
+  //         background-color: @white-base;
+  //         border: none;
+  //
+  //         &:focus {
+  //           box-shadow: none;
+  //           border: none;
+  //         }
+  //       }
+  //   }
+  //
+  //   .subscribe-btn {
+  //     position: absolute;
+  //     top: 0;
+  //     right: 0;
+  //
+  //     width: @btn-width;
+  //     height: @btn-height;
+  //     padding-left: 15px;
+  //     padding-right: 5px;
+  //     box-sizing: border-box;
+  //     z-index: 50;
+  //
+  //       i {
+  //          margin: 0;
+  //         line-height: @btn-height;
+  //       }
+  //   }
 }
