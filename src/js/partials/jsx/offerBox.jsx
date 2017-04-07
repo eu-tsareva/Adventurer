@@ -9,7 +9,7 @@ class OfferBox extends React.Component {
         {
           "title": "technical analysis",
           "body": `Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
-          "img": "./img/cloud.svg"
+          "img": "img/cloud.svg"
         }, {
           "title": "general conract",
           "body": `Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,

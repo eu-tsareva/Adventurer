@@ -14,42 +14,42 @@ class WorkGallery extends React.Component {
         {
           "title": "Our work image 01",
           "text": "Lorem ipsum dolor sit amet, consectetur",
-          "img": "/img/work1.jpg",
+          "img": "img/work1.jpg",
           "link": "#",
           "type": ["all", "photography", "print"]
         },
         {
           "title": "Our work image 02",
           "text": "Lorem ipsum dolor sit amet, consectetur",
-          "img": "/img/work2.jpg",
+          "img": "img/work2.jpg",
           "link": "#",
           "type": ["all", "web"]
         },
         {
           "title": "Our work image 03",
           "text": "Lorem ipsum dolor sit amet, consectetur",
-          "img": "/img/work3.jpg",
+          "img": "img/work3.jpg",
           "link": "#",
           "type": ["all", "graphic", "print"]
         },
         {
           "title": "Our work image 04",
           "text": "Lorem ipsum dolor sit amet, consectetur",
-          "img": "/img/work4.jpg",
+          "img": "img/work4.jpg",
           "link": "#",
           "type": ["all", "graphic"]
         },
         {
           "title": "Our work image 05",
           "text": "Lorem ipsum dolor sit amet, consectetur",
-          "img": "/img/work5.jpg",
+          "img": "img/work5.jpg",
           "link": "#",
           "type": ["all", "graphic", "print"]
         },
         {
           "title": "Our work image 06",
           "text": "Lorem ipsum dolor sit amet, consectetur",
-          "img": "/img/work6.jpg",
+          "img": "img/work6.jpg",
           "link": "#",
           "type": ["all", "photography", "print"]
         },
