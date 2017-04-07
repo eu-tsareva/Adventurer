@@ -5,7 +5,7 @@ class Review extends React.Component {
     return (
       <div className="card card-review horizontal">
         <div className="card-image valign-wrapper">
-          <img className="valign review-image circle" src={ this.props.img } alt={ this.props.alt }/>
+          <img className="valign review-image circle" src={ this.props.img } alt={ this._getAlt() }/>
         </div>
         <div className="card-stacked">
           <div className="card-content">
@@ -15,6 +15,10 @@ class Review extends React.Component {
         </div>
       </div>
     );
+  }
+
+  _getAlt() {
+    return this.props.name + " avatar";
   }
 }
 

@@ -9,23 +9,19 @@ class OfferBox extends React.Component {
         {
           "title": "technical analysis",
           "body": `Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
-          "img": "./img/cloud.svg",
-          "alt": "cloud icon"
+          "img": "./img/cloud.svg"
         }, {
           "title": "general conract",
           "body": `Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
-          "img": "./img/shop.svg",
-          "alt": "shop icon"
+          "img": "./img/shop.svg"
         }, {
           "title": "consultation",
           "body": `Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
-          "img": "./img/graph.svg",
-          "alt": "graph icon"
+          "img": "./img/graph.svg"
         }, {
           "title": "24/7 full suport",
           "body": `Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
-          "img": "./img/basket.svg",
-          "alt": "basket icon"
+          "img": "./img/basket.svg"
         }
       ]
     };
@@ -35,7 +31,9 @@ class OfferBox extends React.Component {
     return (
       <div>
         {this.state.data.map((item, index) =>
-          <Offer title={item.title} body={item.body} img={item.img} alt={item.alt} key={index}/>)}
+          <div className="col m6 s12"  key={index}>
+            <Offer title={item.title} body={item.body} img={item.img} />
+          </div>)}
       </div>
     );
   }

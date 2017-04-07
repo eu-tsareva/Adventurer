@@ -18,16 +18,6 @@ class Nav extends React.Component {
     };
   }
 
-  _isSelected(link) {
-    if (this.state.current == link) {
-      return "active";
-    }
-  }
-
-  _select(link) {
-    this.setState({"current": link});
-  }
-
   render() {
     return (
       <nav className="transparent" role="navigation">
@@ -68,6 +58,17 @@ class Nav extends React.Component {
       </nav>
     );
   }
+
+    _isSelected(link) {
+      if (this.state.current == link) {
+        return "active";
+      }
+    }
+
+    _select(link) {
+      this.setState({"current": link});
+    }
+
 }
 
 export default Nav;

@@ -35,7 +35,9 @@ class StatisticsBox extends React.Component {
     return (
       <div>
         {this.state.data.map((item, index) =>
-          <Statistics title={item.title} body={item.body} img={item.img} alt={item.alt} key={index}/>)}
+          <div className="col m3" key={index}>
+            <Statistics title={item.title} body={item.body} img={item.img} alt={item.alt} />
+          </div>)}
       </div>
     );
   }
