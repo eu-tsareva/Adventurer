@@ -74,6 +74,16 @@ class WorkGallery extends React.Component {
         <div className="gallery-inner">
           { this._generateGallery() }
         </div>
+        <div className="gallery-controls">
+          <a href="#" className="gallery-control gallery-control-prev disabled circle text-hide">
+            <img className="svg" src="./img/arrow-left.svg" />
+            previous
+          </a>
+          <a href="#" className="gallery-control gallery-control-next circle text-hide">
+            <img className="svg" src="./img/arrow-left.svg" />
+            next
+          </a>
+        </div>
       </div>
     );
   }
