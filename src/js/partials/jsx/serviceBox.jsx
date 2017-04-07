@@ -35,10 +35,8 @@ class ServiceBox extends React.Component {
   render() {
     return (
       <div>
-       {
-         this.state.data.map((item, index) =>
-        <Service title={ item.title } body={ item.body } img={ item.img } alt= { item.alt } key={ index }/>)
-      }
+        {this.state.data.map((item, index) =>
+            <Service title={ item.title } body={ item.body } img={ item.img } alt= { item.alt } key={ index }/>)}
       </div>
     );
   }
