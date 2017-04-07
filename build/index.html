@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
@@ -8,97 +9,46 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800|PT+Sans:400,700|Roboto+Condensed:300,400,700" rel="stylesheet">
-  <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+
   <link href="./css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+
 <body>
-  <nav class="transparent" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Adventurer</a>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Faq</a></li>
-        <li><a href="#">Support</a></li>
-        <li><i class="material-icons">search</i></li>
-      </ul>
+  <!-- page navigation -->
+  <div id="page-navigation"></div>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Faq</a></li>
-        <li><a href="#">Support</a></li><li><a href="#">Navbar Link</a></li>
-      </ul>
+  <!-- banner -->
+  <div class="banner-wrapper">
+    <a class="banner-control banner-control-prev center left text-hide circle"><img class="svg" src="./img/arrow-left.svg">previous</a>
+    <a class="banner-control banner-control-next center right text-hide circle"><img class="svg" src="./img/arrow-left.svg">next</a>
 
-    </div>
-  </nav>
-  <div class="carousel-wrapper">
-    <a id="carousel-prev" class="carousel-indicator left">previous</a>
-    <a id="carousel-next" class="carousel-indicator right">next</a>
-
-    <div class="carousel carousel-slider center">
+    <div class="carousel carousel-slider banner center">
       <div class="carousel-fixed-item center">
         <a class="btn">see more</a>
       </div>
       <div class="carousel-item" href="#one!">
-        <h2 class="carousel-title carousel-title-main">Adventurer</h2>
+        <h2 class="banner-title">Adventurer</h2>
         <p>MURI, A TEMPLATE AT THE HEART OF THE BEAUTY</p>
       </div>
       <div class="carousel-item" href="#two!">
-        <p class="carousel-text">web development / creative agency / professional photography </p>
-        <h2 class="carousel-title">biggest one page ever built</h2>
+        <p>web development / creative agency / professional photography </p>
+        <h2>biggest one page ever built</h2>
       </div>
     </div>
   </div>
 
+  <!-- section WHO WE ARE -->
   <div id="about" class="section section-about">
     <div class="container">
-      <h3 class="center">who we are</h3>
+      <h3 class="section-title center">who we are</h3>
       <div class="row">
-        <p class="lead col s9 offset-s2 center">
+        <p class="section-intro col m9 offset-m2 center">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
         </p>
       </div>
-
       <div class="row">
-        <ul class="collapsible col s12 m6" data-collapsible="accordion">
-          <li>
-            <div class="collapsible-header active">Lorem ipsum dolor sit amet</div>
-            <div class="collapsible-body">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit.
-                Duis lorem nulla, eleifend
-                Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur id laoreet velit.
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header">Lorem ipsum dolor sit amet</div>
-            <div class="collapsible-body">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit.
-                Duis lorem nulla, eleifend
-                Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur id laoreet velit.
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header">Lorem ipsum dolor sit amet</div>
-            <div class="collapsible-body">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit.
-                Duis lorem nulla, eleifend
-                Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur id laoreet velit.
-              </p>
-            </div>
-          </li>
-        </ul>
+        <div id="achievments"></div>
 
         <ul class="progress-list col s12 m6">
           <li><span class="progress-bar progress-bar-80">Web Design 80%</span></li>
@@ -115,62 +65,26 @@
 
   <div class="divider"></div>
 
+  <!-- section SERVICES -->
   <div id="service" class="section section-service">
     <div class="container">
-      <h3 class="center">our service</h3>
+      <h3 class="section-title center">our service</h3>
 
       <div class="row">
-        <div class="col s12 m4">
-          <div class="service-item">
-            <div class="service-icon center">
-              <img class="svg" src="./img/cog.svg" alt="cog-icon">
-            </div>
-            <h4>Free support & updates</h4>
-            <p>
-              Lorem ipsum dolor sit amet, conse tetuer adipiscing elit,
-              sed diam nonu my nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-            </p>
-            <a class="btn service-btn">see more</a>
-          </div>
-        </div>
-        <div class="col s12 m4 ">
-          <div class="service-item">
-            <div class="service-icon center">
-              <img class="svg" src="./img/pill.svg" alt="pill-icon">
-            </div>
-            <h4>Fully customizable</h4>
-            <p>
-              Lorem ipsum dolor sit amet, conse tetuer adipiscing elit,
-              sed diam nonu my nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-            </p>
-            <a class="btn service-btn">see more</a>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="service-item">
-            <div class="service-icon center">
-              <img class="svg" src="./img/plug.svg" alt="plug-icon">
-            </div>
-            <h4>12 themE websites</h4>
-            <p>
-              Lorem ipsum dolor sit amet, conse tetuer adipiscing elit,
-              sed diam nonu my nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-            </p>
-            <a class="btn service-btn">see more</a>
-          </div>
-        </div>
+        <div id="service-box"></div>
       </div>
     </div>
   </div>
 
   <div class="divider"></div>
 
+  <!-- section JOIN US -->
   <div class="section">
     <div class="section-join center">
-      <img class="svg" src="./img/user.svg" alt="user-icon">
-      <h3>Join our creative company</h3>
+      <img class="join-icon svg" src="./img/user.svg" alt="user-icon">
+      <h3 class="section-title">Join our creative company</h3>
       <div class="row">
-        <p class="col s8 offset-s2 lead">
+        <p class="section-intro col s8 offset-s2 lead">
           “ Hello! Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
           tincidunt ut laoreet dolore magna aliquam erat volutpat.”
         </p>
@@ -181,122 +95,163 @@
 
   <div class="divider"></div>
 
+  <!-- section OFFERS -->
   <div class="section section-offer">
     <div class="container">
-      <h3 class="center">What we Offer</h3>
+      <h3 class="section-title center">What we Offer</h3>
       <div class="row">
-        <div class="col m6 s12">
-          <div class="card card-offer horizontal">
-            <div class="card-image">
-              <div class="offer-icon valign-wrapper">
-                <img class="svg valign" src="./img/cloud.svg" alt="cloud-icon">
-              </div>
-            </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                <h4>technical analysis</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col m6 s12">
-          <div class="card card-offer horizontal">
-            <div class="card-image">
-              <div class="offer-icon valign-wrapper">
-                <img class="svg valign" src="./img/shop.svg" alt="cloud-icon">
-              </div>
-            </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                <h4>general conract</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col m6 s12">
-          <div class="card card-offer horizontal">
-            <div class="card-image">
-              <div class="offer-icon valign-wrapper">
-                <img class="svg valign" src="./img/graph.svg" alt="cloud-icon">
-              </div>
-            </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                <h4>consultation</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col m6 s12">
-          <div class="card card-offer horizontal">
-            <div class="card-image">
-              <div class="offer-icon valign-wrapper">
-                <img class="svg valign" src="./img/basket.svg" alt="cloud-icon">
-              </div>
-            </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                <h4>24/7 full suport</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div id="offer-box"></div>
       </div>
     </div>
   </div>
 
   <div class="divider"></div>
 
-  <div class="section">
-
-  </div>
-
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+  <!-- section REVIEWS -->
+  <div class="section section-review">
+    <h3 class="section-title center">Customer reviews</h3>
+    <div class="row">
+      <div class="col m8 offset-m2">
+        <!-- slider -->
+        <div class="slider" id="slider-box">
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- section STATISTICS -->
+  <div class="section">
+    <div class="section-statistics parallax-container valign-wrapper">
+      <div class="parallax">
+        <img src="./img/statistics-bg.jpg">
+      </div>
+      <div class="row container valign">
+        <div id="statistics-box"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section TEAM -->
+  <div class="section section-team">
+    <h3 class="section-title center">Meet our team</h3>
+    <div class="row">
+      <p class="section-intro col m9 offset-m2 center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse
+        cursus malesuada facilisis.Lorem ipsum dolor sit amet, consectetur facilisis.
+      </p>
+    </div>
+    <div class="row container">
+      <div id="team-box"></div>
+    </div>
+  </div>
+
+
+  <div class="divider"></div>
+
+  <!-- section WORKS -->
+  <div class="section section-works">
+    <h3 class="section-title center">Our awesome works</h3>
+    <div class="row">
+      <p class="section-intro col m8 offset-m2 center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse
+        cursus malesuada facilisis.Lorem ipsum dolor sit amet, consectetur facilisis.
+      </p>
+    </div>
+    <div id="work-gallery"></div>
+  </div>
+
+  <!-- footer -->
+  <footer class="page-footer">
+    <div class="footer-subscribe">
+      <div class="container">
+        <div class="row valign-wrapper">
+          <div class="col m5">
+            <p class="valign">Subscribe to our newsletter to get every Notify</p>
+          </div>
+          <div class="col m4 offset-m3">
+            <form class="inline-form subscribe-form" action="" method="post">
+              <div class="input-field">
+                <input name="email" type="email" placeholder="Your email">
+              </div>
+              <button class="btn subscribe-btn center" type="submit" name="action">
+                <i class="material-icons right">send</i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col m3">
+            <div class=" footer-section">
+              <a class="footer-title logo" href="#top">Adventurer</a>
+              <p>
+                It is a long established fact that a reader will be distracted by the readable content of
+                a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.
+              </p>
+              <ul class="social-list inline-list">
+                <li><a class="social-icon text-hide center" href="#"><img src="./img/facebook.png">facebook</a></li>
+                <li><a class="social-icon text-hide center" href="#"><img src="./img/google.png">google+</a></li>
+                <li><a class="social-icon text-hide center" href="#"><img src="./img/twitter.png">twitter</a></li>
+                <li><a class="social-icon text-hide center" href="#"><img src="./img/vimeo.png">vimeo</a></li>
+                <li><a class="social-icon text-hide center" href="#"><img src="./img/linkedin.png">linked</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col m3">
+            <div class="footer-section">
+              <div class="footer-subtitle">Some features</div>
+              <ul class="footer-features">
+                <li>Lorem ipsum dotlor sit amet</li>
+                <li>Aliquam tincidunt cons ectetuer </li>
+                <li>Vestibulum auctor dapibus con</li>
+                <li>Lorem ipsum dolor sit ametauctor dapibus</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col m3">
+            <div class="footer-section">
+              <div class="footer-subtitle">Tags</div>
+              <div class="table-flex-stretch">
+                <span class="table-flex-item tag">corporate</span>
+                <span class="table-flex-item tag">agency</span>
+                <span class="table-flex-item tag">portfolio</span>
+                <span class="table-flex-item tag">blog</span>
+                <span class="table-flex-item tag">elegant</span>
+                <span class="table-flex-item tag">professional</span>
+                <span class="table-flex-item tag">business</span>
+              </div>
+            </div>
+          </div>
+          <div class="col m3">
+            <div class="footer-section">
+              <div class="footer-subtitle">Flicker Posts</div>
+              <div class="table-flex">
+                <span class="table-flex-item hoverable"><img src="./img/flicker1.jpg" alt="flicker post"></span>
+                <span class="table-flex-item"><img src="./img/flicker2.jpg" alt="flicker post"></span>
+                <span class="table-flex-item"><img src="./img/flicker3.jpg" alt="flicker post"></span>
+                <span class="table-flex-item"><img src="./img/flicker4.jpg" alt="flicker post"></span>
+                <span class="table-flex-item"><img src="./img/flicker5.jpg" alt="flicker post"></span>
+                <span class="table-flex-item"><img src="./img/flicker6.jpg" alt="flicker post"></span>
+                <span class="table-flex-item"><img src="./img/flicker7.jpg" alt="flicker post"></span>
+                <span class="table-flex-item"><img src="./img/flicker8.jpg" alt="flicker post"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+       &copy; 2015 loran Kha. All Rights Reserved. <a href="#">Ehsanul</a>
       </div>
     </div>
   </footer>
 
-
-  <!--  Scripts-->
-  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/svg.js"></script> -->
-
+  <script src="js/main.js"></script>
   </body>
 </html>
