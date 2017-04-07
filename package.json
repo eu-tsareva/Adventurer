@@ -16,6 +16,7 @@
     "browserify": "^14.3.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.6",
     "gulp-htmlhint": "^0.3.1",
     "gulp-imagemin": "^3.2.0",
     "gulp-inline-css": "^3.1.0",
@@ -29,6 +30,7 @@
     "imagemin-pngquant": "^5.0.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "run-sequence": "^1.2.2",
     "vinyl-source-stream": "^1.1.0"
   }
 }
